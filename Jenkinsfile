@@ -42,5 +42,12 @@ pipeline{
 		}
         }
       }
+    stage('Giong live'){
+        steps{
+		script{
+          groovyfile.live_app()
+		}
+        }
+      }
     }
 }
