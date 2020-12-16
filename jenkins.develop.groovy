@@ -15,7 +15,6 @@ def down_app(){
 
 def release_app(){
   echo 'branch into release'
-  bat 'git merge origin master'
 }
 
 def live_app(){
