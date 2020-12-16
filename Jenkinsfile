@@ -20,24 +20,10 @@ pipeline {
       }
     }
 
-    stage('Testing') {
-      parallel {
-        stage('Stress Testing') {
-          steps {
-            script {
-              groovyfile.stress_test_app()
-            }
-
-          }
-        }
-
-        stage('test app') {
-          steps {
-            script {
-              groovyfile.test_app()
-            }
-
-          }
+    stage('Stress Testing') {
+      steps {
+        script {
+          groovyfile.stress_test_app()
         }
 
       }
