@@ -1,5 +1,5 @@
 def build_app(){
-  
+  bat 'C:/Users/Daija/AppData/Local/Programs/Python/Python39/python.exe pip install requirements.txt'
 }
 
 def test_app(){
