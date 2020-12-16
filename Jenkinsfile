@@ -20,7 +20,7 @@ pipeline {
       }
     }
 
-    stage('Stress Testing') {
+    stage('Testing') {
       parallel {
         stage('Stress Testing') {
           steps {
@@ -31,7 +31,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('test app') {
           steps {
             script {
               groovyfile.test_app()
