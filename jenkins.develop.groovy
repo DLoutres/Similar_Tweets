@@ -6,12 +6,8 @@ def build_app(){
 def stress_test_app(){
   echo 'stress test'
   bat 'C:/Users/Daija/AppData/Local/Programs/Python/Python39/python.exe stress_test_app.py'
-}
-
-/*def test_app(){
-  echo 'test app'
   bat 'C:/Users/Daija/AppData/Local/Programs/Python/Python39/python.exe test_app.py'
-}*/
+}
 
 def down_app(){
   echo 'down image'
