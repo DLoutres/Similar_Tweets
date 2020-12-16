@@ -11,7 +11,7 @@ def down_app(){
 }
 
 def release_app(){
-  echo 'branch into release'
+  echo 'branch into release 1'
 }
 
 def live_app(){
