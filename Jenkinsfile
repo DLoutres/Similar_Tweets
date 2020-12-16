@@ -42,7 +42,7 @@ pipeline{
 		}
         }
       }
-    stage('Giong live'){
+    stage('Go to Production'){
         steps{
 		script{
           groovyfile.live_app()
