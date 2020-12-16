@@ -24,6 +24,13 @@ pipeline{
     stage('Stress Testing'){
       steps{
         script{
+          groovyfile.stress_test_app()
+        }
+      }
+    }
+        stage('Testing app'){
+      steps{
+        script{
           groovyfile.test_app()
         }
       }
