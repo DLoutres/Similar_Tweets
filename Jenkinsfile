@@ -1,4 +1,3 @@
-def groovyfile
 pipeline {
   agent any
   stages {
