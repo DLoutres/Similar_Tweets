@@ -28,13 +28,7 @@ pipeline{
         }
       }
     }
-    /*stage('Testing app'){
-      steps{
-        script{
-          groovyfile.test_app()
-        }
-      }
-    }*/
+
     stage('Docker images down'){
       steps{
         script{
