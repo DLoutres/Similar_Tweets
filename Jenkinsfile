@@ -1,4 +1,3 @@
-def groovyfile
 pipeline{
   agent any
   
@@ -13,7 +12,7 @@ pipeline{
 		}
 	  }
     
-    stage('Build Flask app'){
+    stage('Build app'){
       steps{
         script{
           groovyfile.build_app()
@@ -21,7 +20,7 @@ pipeline{
       }
     }
 
-    stage('Testing'){
+    stage('Testing app'){
       steps{
         script{
           groovyfile.test_app()
